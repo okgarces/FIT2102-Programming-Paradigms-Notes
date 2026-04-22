@@ -12,4 +12,3 @@ To cite these course notes, please use the following DOI:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5226211.svg)](https://doi.org/10.5281/zenodo.5226211)
 
 ---
-[GetSongBPM is a handy web service we use in example code](https://getsongbpm.com/api)
