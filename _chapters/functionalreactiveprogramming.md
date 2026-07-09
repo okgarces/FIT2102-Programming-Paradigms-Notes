@@ -47,7 +47,7 @@ of(1,2,3,4)
 
 ![Using Of](/assets/images/chapterImages/functionalreactiveprogramming/of1234.gif)
 
-The requirement to invoke `subscribe` before anything is produced by the Observable is conceptually similar to the [lazy sequence](lazyevaluation), where nothing happened until we started calling `next`.  But there is also a difference.
+The requirement to invoke `subscribe` before anything is produced by the Observable is conceptually similar to the [lazy sequence](/lazyevaluation/), where nothing happened until we started calling `next`.  But there is also a difference.
 You could think of our lazy sequences as being “pull-based” data structures, because we had to “pull” the values out one at a time by calling the `next` function as many times as we wanted elements of the list.  Observables are a bit different.  They are used to handle “streams” of things, such as asynchronous UI (e.g. mouse clicks on an element of a web page) or communication events (e.g. responses from a web service).  These things are asynchronous in the sense that we do not know when they will occur.
 
 Just as we have done for various data structures (arrays and so on) in previous chapters, we can define a transform over an Observable to create a new Observable.  This transformation may have multiple steps the same way that we chained `filter` and `map` operations over arrays previously.  In RxJS’s Observable implementation, however, they’ve gone a little bit more functional, by insisting that such operations are composed (rather than chained) inside a `pipe`.  For example, here’s the squares of even numbers in the range [0,10):
