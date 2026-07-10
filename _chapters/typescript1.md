@@ -626,7 +626,7 @@ If we have an array of numbers, and we wanted to keep only even numbers, we coul
 const isEven = num => num % 2 === 0
 ```
 
-If you do not know how to write an `isEven` function, luckily there are [libraries](https://www.npmjs.com/package/is-even) for that. But, we know how to do it know.
+If you do not know how to write an `isEven` function, luckily there are [libraries](https://www.npmjs.com/package/is-even) for that. But, we know how to do it now.
 
 We can provide the type of our function as:
 

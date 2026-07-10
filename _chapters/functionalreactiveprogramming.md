@@ -83,7 +83,7 @@ range(10)
   .forEach(console.log)
 ```
 
-To solve the first Project Euler problem using RxJS, we generate a sequence of numbers from 0 to 999 with `range(1000)`. We then use the `filter` operator to select numbers divisible by 3 or 5. We then use he `scan` operator, akin to reduce, accumulates the sum of these filtered numbers over time, and the `last` operator emits only the final accumulated sum. Finally, we subscribe to the observable and log the result to the console. Here’s the complete code:
+To solve the first Project Euler problem using RxJS, we generate a sequence of numbers from 0 to 999 with `range(1000)`. We then use the `filter` operator to select numbers divisible by 3 or 5. We then use the `scan` operator, akin to reduce, accumulates the sum of these filtered numbers over time, and the `last` operator emits only the final accumulated sum. Finally, we subscribe to the observable and log the result to the console. Here’s the complete code:
 
 ```javascript
 range(1000)
@@ -99,7 +99,7 @@ In the developer console, only one number will be printed:
 
 > 233168
 
-We can see the values changes as they move further and further down the stream. The four animations represent the creation (`range`) and the three transformations (`filter`, `scan` and `last`), respectively. The `last` animation is empty, since we only emit the *last* value, which will be off screen.
+We can see the values change as they move further and further down the stream. The four animations represent the creation (`range`) and the three transformations (`filter`, `scan` and `last`), respectively. The `last` animation is empty, since we only emit the *last* value, which will be off screen.
 
 ![Euler Example](/assets/images/chapterImages/functionalreactiveprogramming/euler.gif)
 
